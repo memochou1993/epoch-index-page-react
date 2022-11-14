@@ -1,10 +1,10 @@
-import './App.css'
-
+import React from 'react';
+import './App.css';
 
 function App() {
   const sites = [
     //
-  ]
+  ];
 
   return (
     <>
@@ -12,9 +12,9 @@ function App() {
       <div>
         <ul>
           {
-            sites.map((site, i) => (
-              <li key={i}>
-                <a href={site.link} target="_blank">
+            sites.map((site) => (
+              <li key={site.name}>
+                <a href={site.link} target="_blank" rel="noreferrer">
                   { site.name }
                 </a>
               </li>
@@ -23,7 +23,7 @@ function App() {
         </ul>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
