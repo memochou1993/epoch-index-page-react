@@ -1,21 +1,18 @@
 import React from 'react';
+import pages from './assets/pages.json';
 import './App.css';
 
 function App() {
-  const sites = [
-    //
-  ];
-
   return (
     <>
-      <h1>epoch.tw</h1>
+      <h1>Index of https://epoch.tw/</h1>
       <div>
         <ul>
           {
-            sites.map((site) => (
-              <li key={site.name}>
-                <a href={site.link} target="_blank" rel="noreferrer">
-                  { site.name }
+            pages.map((page) => (
+              <li key={page.link}>
+                <a href={page.link} target="_blank" rel="noreferrer">
+                  { page.label }
                 </a>
               </li>
             ))
