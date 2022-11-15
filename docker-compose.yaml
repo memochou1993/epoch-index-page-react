@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    container_name: epoch-index
+    container_name: epoch-index-page-react
     build: .
     restart: always
     ports:
